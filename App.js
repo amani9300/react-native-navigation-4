@@ -12,11 +12,12 @@ export default function App() {
 
   return (
    <NavigationContainer>
-     <Navigator>
+     <Navigator screenOptions={{headerTitleAlign:'center'}}>
         {/* <Route path='/home' element={Home}/>  */}
-        <Screen component={Welcome} />
-        <Screen component={Login} />
-        <Screen component={Home} />
+        <Screen name='Welcome' component={Welcome} />
+        
+        <Screen name='Login' component={Login} />
+        <Screen name='Home' component={Home} />
      </Navigator>
    </NavigationContainer>
   );
